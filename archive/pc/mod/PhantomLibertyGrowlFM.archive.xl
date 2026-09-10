@@ -1,0 +1,25 @@
+# The track title. Vanilla leaves a Growl FM title in Latin script for most languages, so
+# every language points at one file; Russian and Ukrainian do transliterate the artist, so
+# either can be repointed at its own file without changing anything else.
+# en-us is listed first and is therefore ArchiveXL's fallback.
+localization:
+  onscreens:
+    en-us: mod\phantomlibertygrowlfm\localization\onscreens.json
+    ar-ar: mod\phantomlibertygrowlfm\localization\onscreens.json
+    cz-cz: mod\phantomlibertygrowlfm\localization\onscreens.json
+    de-de: mod\phantomlibertygrowlfm\localization\onscreens.json
+    es-es: mod\phantomlibertygrowlfm\localization\onscreens.json
+    es-mx: mod\phantomlibertygrowlfm\localization\onscreens.json
+    fr-fr: mod\phantomlibertygrowlfm\localization\onscreens.json
+    hu-hu: mod\phantomlibertygrowlfm\localization\onscreens.json
+    it-it: mod\phantomlibertygrowlfm\localization\onscreens.json
+    jp-jp: mod\phantomlibertygrowlfm\localization\onscreens.json
+    kr-kr: mod\phantomlibertygrowlfm\localization\onscreens.json
+    pl-pl: mod\phantomlibertygrowlfm\localization\onscreens.json
+    pt-br: mod\phantomlibertygrowlfm\localization\onscreens.json
+    ru-ru: mod\phantomlibertygrowlfm\localization\onscreens.json
+    th-th: mod\phantomlibertygrowlfm\localization\onscreens.json
+    tr-tr: mod\phantomlibertygrowlfm\localization\onscreens.json
+    ua-ua: mod\phantomlibertygrowlfm\localization\onscreens.json
+    zh-cn: mod\phantomlibertygrowlfm\localization\onscreens.json
+    zh-tw: mod\phantomlibertygrowlfm\localization\onscreens.json

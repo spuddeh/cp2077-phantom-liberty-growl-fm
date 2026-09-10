@@ -1,0 +1,32 @@
+{
+  "Header": {
+    "WolvenKitVersion": "8.20.0",
+    "WKitJsonVersion": "0.0.9",
+    "GameVersion": 2310,
+    "ExportedDateTime": "2026-09-11T00:00:00.0000000Z",
+    "DataType": "CR2W"
+  },
+  "Data": {
+    "Version": 195,
+    "BuildVersion": 0,
+    "RootChunk": {
+      "$type": "JsonResource",
+      "cookingPlatform": "PLATFORM_PC",
+      "root": {
+        "HandleId": "0",
+        "Data": {
+          "$type": "localizationPersistenceOnScreenEntries",
+          "entries": [
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty",
+              "maleVariant": "",
+              "primaryKey": "0",
+              "secondaryKey": "Gameplay-Devices-Radio_tracks-growl_phantom_liberty"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+[center][color=#ffff00][size=6][b]Phantom Liberty on Growl FM[/b][/size][/color]
+[i]The song from the Phantom Liberty end credits, now in 89.7 Growl FM's rotation.[/i][/center]
+[line]
+[color=#ffff00][size=5][b]Description[/b][/size][/color]
+[b]Phantom Liberty[/b] by Dawid Podsiadło and P.T. Adamczyk plays once, over the credits, and then you never hear it again. It is on no radio station, and there is no way to put it on.
+
+The recording is already sitting in your game files - the full 5:47, the same one the credits roll to. This mod puts it on Growl FM, where it comes up in rotation like any other track on the station, with the artists and title on the HUD.
+
+[color=#ffff00][size=4][b]It ships no audio[/b][/size][/color]
+The song is already installed on your machine. This mod is a few hundred bytes of soundbank and a script that tells the station the track exists. It does not contain, copy or redistribute any music, and it does not overwrite a single vanilla file.
+
+[line]
+[color=#ffff00][size=5][b]Features[/b][/size][/color]
+[list]
+[*][b]Plays in normal rotation.[/b] Nothing to activate and nothing to configure. Get in a car, tune to 89.7, and wait for it like any other song.[/*]
+[*][b]The whole song.[/b] All 5:47 of it, with the silence at each end of the game's file trimmed off, so the station opens on the song and hands over to the next track on time.[/*]
+[*][b]Station mixing.[/b] The track hangs off Growl FM's own playlist, so it takes the station's own mix rather than a level of my choosing.[/*]
+[*][b]Named properly.[/b] Shows as [font=Courier New]Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty[/font].[/*]
+[*][b]All languages.[/b] The title is registered for every language the game ships.[/*]
+[*][b]Safe to remove.[/b] Nothing is written to your save and no vanilla file is touched. Delete the folders and the station goes back to the tracks it had.[/*]
+[/list]
+[line]
+[color=#ffff00][size=5][b]Requirements[/b][/size][/color]
+[list]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/33442]AudioXL[/url] - loads the soundbank.[/*]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/4198]ArchiveXL[/url] - registers the track title.[/*]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/7780]Codeware[/url][/*]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/1511]Redscript[/url][/*]
+[/list]
+[color=#ffff00][size=4][b]Optional[/b][/size][/color]
+[list]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/31920]RedLogger[/url] - the mod writes what it registered to [font=Courier New]r6\logs\mods\[/font]. Only needed if something is not working and you want to know why.[/*]
+[/list]
+[line]
+[color=#ffff00][size=5][b]Installation[/b][/size][/color]
+Install with your mod manager, or extract the archive into your Cyberpunk 2077 folder so you end up with:
+[code]Cyberpunk 2077\archive\pc\mod\PhantomLibertyGrowlFM.archive
+Cyberpunk 2077\archive\pc\mod\PhantomLibertyGrowlFM.archive.xl
+Cyberpunk 2077\r6\scripts\PhantomLibertyGrowlFM\PhantomLibertyGrowlFM.reds
+Cyberpunk 2077\red4ext\plugins\AudioXL\sounds\PhantomLibertyGrowlFM\[/code]
+
+[color=#ffff00][size=4][b]Uninstall[/b][/size][/color]
+Delete those four paths. No save cleanup is needed.
+
+[line]
+[color=#ffff00][size=5][b]Compatibility[/b][/size][/color]
+[list]
+[*]The station's track list is edited in memory as the game loads it. No vanilla file is replaced, so nothing is overwritten for another mod to disagree with.[/*]
+[*]It adds to a stock station rather than creating one, so it does not compete with mods that add their own stations.[/*]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/33600]Hardest to Be on Growl FM[/url] adds another missing song to the same station. Both play together.[/*]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/17042]Restore Nebula[/url] also adds a track to Growl FM, and on its own it loses that track beside this mod. Download the [b]Restore Nebula Compatibility Patch[/b] from [url=https://www.nexusmods.com/cyberpunk2077/mods/33600]Hardest to Be on Growl FM[/url]'s optional files - it covers this mod as well, and it does not need Hardest to Be installed. With it, all three songs play.[/*]
+[*]The track is added once. Loading a save made before installing is fine.[/*]
+[/list]
+[line]
+[color=#ffff00][size=5][b]Source[/b][/size][/color]
+The source is on [url=https://github.com/spuddeh/cp2077-phantom-liberty-growl-fm]GitHub[/url]. If you want the technical side - what a radio track actually is in Wwise terms, why a station's playlist cannot be reached with a tweak, and the things that make a correct-looking soundbank play silence - that is written up in [url=https://github.com/spuddeh/cp2077-hardest-to-be-growl-fm/blob/main/docs/how-it-works.md]how-it-works.md[/url] on the sibling mod, which is built the same way.
+
+[line]
+[color=#ffff00][size=5][b]Credits[/b][/size][/color]
+[list]
+[*][b]Phantom Liberty[/b] performed by Dawid Podsiadło, written with P.T. Adamczyk. Music belongs to CD PROJEKT RED, and this mod plays your own copy of it.[/*]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/33442]AudioXL[/url] by DigitalVixen, which loads the soundbank.[/*]
+[/list]
+[line]
+[color=#ffff00][size=5][b]Disclaimer[/b][/size][/color]
+This mod was developed with the assistance of an LLM. All in-game testing and code validation was performed by a human. No rogue AIs were permitted through the Blackwall.

@@ -13,3 +13,17 @@
   double cannot be matched on value the way the end trim can.
 - Trims are 3855 ms and 5031 ms, measured at a -70 dB floor. The remaining 347.243 s is the length
   of the released single, which is what confirms the source.
+
+### Verified
+
+- **Playing in game 2026-09-11.** The track comes up in Growl FM's rotation and plays in full.
+- **Three added tracks coexist on one station.** Verified beside Hardest to Be on Growl FM and its
+  Restore Nebula Compatibility Patch: Hardest to Be, Restore Nebula and Phantom Liberty all play.
+
+### Decided
+
+- **No Restore Nebula patch of this mod's own.** The patch on Hardest to Be's page references
+  nothing of that mod - it declares Restore Nebula's own event, ids and title keys, and is guarded
+  on a file only Restore Nebula's archive provides - so it is already the patch for any mod that
+  reads the station data at script start. A second copy would add a second service doing the same
+  work. This mod's page sends Restore Nebula users to that file instead.

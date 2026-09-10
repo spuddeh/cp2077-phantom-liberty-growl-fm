@@ -9,12 +9,12 @@
 - The station shows `Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty`, in all nineteen languages.
 - The track sits at Growl FM's own level and fades with distance like every other song, because the
   segment carries the station's broadcast sends, bus and dry Volume rather than a tuned trim.
+- Coexists with the other mods that add a track to Growl FM. Hardest to Be, Restore Nebula and this
+  one all play on the station together, with Hardest to Be's Restore Nebula Compatibility Patch
+  installed.
 
 ## Planned
 
-- Restore Nebula also adds a track to Growl FM and loses it beside any mod that reads the station
-  data at script start, this one included. Hardest to Be on Growl FM ships an optional patch for
-  exactly that; this mod needs its own, for anyone who installs it alone.
 - At 347 s it is the longest track on the station by more than two minutes. Whether that reads as a
   centrepiece or as an outlier is a listening call, not a measurement.
 - Russian and Ukrainian transliterate a Latin-script artist name in vanilla, and this ships the

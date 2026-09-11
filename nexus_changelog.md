@@ -1,6 +1,6 @@
 # Changelog
 
-### [Unreleased - v0.1.0]
+### [v1.0.0]
 - First release. Adds Phantom Liberty to 89.7 Growl FM, in normal rotation.
 - Plays the credits recording already in your game, with the silence at each end trimmed. The mod
   ships no audio.
@@ -15,7 +15,7 @@
 ```
 [color=#ffff00][size=5][b]- Changes -[/b][/size][/color]
 
-[b][size=3]Version 0.1.0[/size][/b]
+[b][size=3]Version 1.0.0[/size][/b]
 [list][*]New: Adds Phantom Liberty to 89.7 Growl FM, in normal rotation.[/*]
 [*]New: Plays the credits recording already in your game, with the silence at each end trimmed. The mod ships no audio.[/*]
 [*]New: Shows as Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty, in every language the game ships.[/*]

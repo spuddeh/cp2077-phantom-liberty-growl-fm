@@ -3,7 +3,7 @@
 Adds *Phantom Liberty*, the Phantom Liberty end-credits song, to 89.7 Growl FM, so it comes up in
 rotation like any other track on the station.
 
-**Nexus:** N/A
+**Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/33754>
 
 **The mod ships no audio.** The song is already in the game, and the mod points at that copy.
 

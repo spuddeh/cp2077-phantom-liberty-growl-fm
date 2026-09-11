@@ -4,7 +4,7 @@
 [color=#ffff00][size=5][b]Description[/b][/size][/color]
 [b]Phantom Liberty[/b] by Dawid Podsiadło and P.T. Adamczyk plays once, over the credits, and then you never hear it again. It is on no radio station, and there is no way to put it on.
 
-The recording is already sitting in your game files - the full 5:47, the same one the credits roll to. This mod puts it on Growl FM, where it comes up in rotation like any other track on the station, with the artists and title on the HUD.
+The recording is already sitting in your game files. This mod puts it on Growl FM, where it comes up in rotation like any other track on the station, with the artists and title on the HUD.
 
 [color=#ffff00][size=4][b]It ships no audio[/b][/size][/color]
 The song is already installed on your machine. This mod is a few hundred bytes of soundbank and a script that tells the station the track exists. It does not contain, copy or redistribute any music, and it does not overwrite a single vanilla file.
@@ -13,7 +13,6 @@ The song is already installed on your machine. This mod is a few hundred bytes o
 [color=#ffff00][size=5][b]Features[/b][/size][/color]
 [list]
 [*][b]Plays in normal rotation.[/b] Nothing to activate and nothing to configure. Get in a car, tune to 89.7, and wait for it like any other song.[/*]
-[*][b]The whole song.[/b] All 5:47 of it, with the silence at each end of the game's file trimmed off, so the station opens on the song and hands over to the next track on time.[/*]
 [*][b]Station mixing.[/b] The track hangs off Growl FM's own playlist, so it takes the station's own mix rather than a level of my choosing.[/*]
 [*][b]Named properly.[/b] Shows as [font=Courier New]Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty[/font].[/*]
 [*][b]All languages.[/b] The title is registered for every language the game ships.[/*]

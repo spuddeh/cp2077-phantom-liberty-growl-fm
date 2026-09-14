@@ -13,7 +13,6 @@ module PhantomLibertyGrowlFM
 @if(ModuleExists("RedLogger"))
 import RedLogger.*
 
-@if(ModuleExists("AudioXL"))
 import AudioXL.*
 
 @if(ModuleExists("RedLogger"))
@@ -75,7 +74,7 @@ public class PhantomLibertyGrowlFM extends ScriptableService {
   }
 
   private func Watch(depot: ref<ResourceDepot>, path: ResRef, callback: CName) -> Void {
-    if !this.AlreadyRequested(path) {
+    if !AudioXLNative.IsResourceRequested(path) {
       return;
     }
     let token = depot.LoadResource(path);
@@ -83,17 +82,6 @@ public class PhantomLibertyGrowlFM extends ScriptableService {
       ArrayPush(this.m_tokens, token);
       token.RegisterCallback(this, callback);
     }
-  }
-
-  @if(ModuleExists("AudioXL"))
-  private func AlreadyRequested(path: ResRef) -> Bool {
-    return AudioXLNative.IsResourceRequested(path);
-  }
-
-  // Without AudioXL the bank never loads, so there is no track to add.
-  @if(!ModuleExists("AudioXL"))
-  private func AlreadyRequested(path: ResRef) -> Bool {
-    return false;
   }
 
   private cb func OnEventsMetadata(event: ref<ResourceEvent>) {

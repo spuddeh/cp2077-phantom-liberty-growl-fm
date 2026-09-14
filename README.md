@@ -57,3 +57,16 @@ file without changing anything else.
 
 The entry is authored in `tools/onscreens.json`. Its `primaryKey` is `0`, which is what makes
 ArchiveXL register it under the hash of the secondary key.
+
+## License
+
+Licensed under the [PolyForm Strict License 1.0.0](LICENSE.md). You may use this mod and read its source
+for any **noncommercial** purpose. You may not share or re-upload it, or make changes or new works based on
+it, without permission. Commercial use, including paid mods or selling, is not permitted.
+
+Permission requests go through the [Nexus Mods page](https://www.nexusmods.com/cyberpunk2077/mods/33754).
+
+## Disclaimer
+
+This mod was developed with the assistance of an LLM. All in-game testing and code validation was
+performed by a human. No rogue AIs were permitted through the Blackwall.

@@ -54,7 +54,6 @@ Songs the game has but never puts on the radio, each added to a station the same
 [list]
 [*]The station's track list is edited in memory as the game loads it. No vanilla file is replaced, so nothing is overwritten for another mod to disagree with.[/*]
 [*]It adds to a stock station rather than creating one, so it does not compete with mods that add their own stations.[/*]
-[*][url=https://www.nexusmods.com/cyberpunk2077/mods/33600]Hardest to Be on Growl FM[/url] adds another missing song to the same station. Both play together.[/*]
 [*][url=https://www.nexusmods.com/cyberpunk2077/mods/17042]Restore Nebula[/url] also adds a track to Growl FM, and both play together with no patch. If you installed the Restore Nebula Compatibility Patch for an earlier version, delete it.[/*]
 [*]The track is added once. Loading a save made before installing is fine.[/*]
 [/list]

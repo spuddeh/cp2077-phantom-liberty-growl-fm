@@ -13,6 +13,9 @@ module PhantomLibertyGrowlFM
 @if(ModuleExists("RedLogger"))
 import RedLogger.*
 
+@if(ModuleExists("AudioXL"))
+import AudioXL.*
+
 @if(ModuleExists("RedLogger"))
 public func PhantomLog(msg: String) -> Void {
   RedLog.Append("PhantomLibertyGrowlFM", msg);
@@ -30,8 +33,10 @@ public func PhantomLog(msg: String) -> Void {}
 // The event itself comes from hardest_to_be_growl.bnk, which AudioXL loads.
 //
 // Each resource is reached two ways. Resource/Load fires only while a resource is loading, so it
-// never arrives for one another mod has already pulled in. Both paths run the same patch, which
-// is safe to run twice.
+// never arrives for one another mod has already pulled in; a token covers that case. The token is
+// taken only for a resource something has already requested. Taken from OnLoad for anything else,
+// it starts the load inside Codeware's OnLoad loop, and every service after this one misses the
+// event. Both paths run the same patch, which is safe to run twice.
 
 public class PhantomLibertyGrowlFM extends ScriptableService {
 
@@ -65,18 +70,30 @@ public class PhantomLibertyGrowlFM extends ScriptableService {
       .AddTarget(ResourceTarget.Path(r"base\\sound\\metadata\\cooked_metadata.audio_metadata"));
 
     let depot = GameInstance.GetResourceDepot();
+    this.Watch(depot, r"base\\sound\\event\\eventsmetadata.json", n"OnEventsReady");
+    this.Watch(depot, r"base\\sound\\metadata\\cooked_metadata.audio_metadata", n"OnCookedReady");
+  }
 
-    let events = depot.LoadResource(r"base\\sound\\event\\eventsmetadata.json");
-    if IsDefined(events) {
-      ArrayPush(this.m_tokens, events);
-      events.RegisterCallback(this, n"OnEventsReady");
+  private func Watch(depot: ref<ResourceDepot>, path: ResRef, callback: CName) -> Void {
+    if !this.AlreadyRequested(path) {
+      return;
     }
+    let token = depot.LoadResource(path);
+    if IsDefined(token) {
+      ArrayPush(this.m_tokens, token);
+      token.RegisterCallback(this, callback);
+    }
+  }
 
-    let cooked = depot.LoadResource(r"base\\sound\\metadata\\cooked_metadata.audio_metadata");
-    if IsDefined(cooked) {
-      ArrayPush(this.m_tokens, cooked);
-      cooked.RegisterCallback(this, n"OnCookedReady");
-    }
+  @if(ModuleExists("AudioXL"))
+  private func AlreadyRequested(path: ResRef) -> Bool {
+    return AudioXLNative.IsResourceRequested(path);
+  }
+
+  // Without AudioXL the bank never loads, so there is no track to add.
+  @if(!ModuleExists("AudioXL"))
+  private func AlreadyRequested(path: ResRef) -> Bool {
+    return false;
   }
 
   private cb func OnEventsMetadata(event: ref<ResourceEvent>) {

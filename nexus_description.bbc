@@ -43,6 +43,13 @@ Cyberpunk 2077\red4ext\plugins\AudioXL\sounds\PhantomLibertyGrowlFM\[/code]
 Delete those four paths. No save cleanup is needed.
 
 [line]
+[color=#ffff00][size=5][b]More songs from the game[/b][/size][/color]
+Songs the game has but never puts on the radio, each added to a station the same way as this one:
+[list]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/33600]Hardest to Be on Growl FM[/url] - Hardest to Be by P.T. Adamczyk and Sora Lion, from Phantom Liberty, on 89.7 Growl FM.[/*]
+[*][url=https://www.nexusmods.com/cyberpunk2077/mods/NFA_NEXUS_ID]Never Fade Away on Morro Rock Radio[/url] - the base game end-credits cover of Never Fade Away by P.T. Adamczyk and Olga Jankowska, on 107.3 Morro Rock Radio.[/*]
+[/list]
+[line]
 [color=#ffff00][size=5][b]Compatibility[/b][/size][/color]
 [list]
 [*]The station's track list is edited in memory as the game loads it. No vanilla file is replaced, so nothing is overwritten for another mod to disagree with.[/*]

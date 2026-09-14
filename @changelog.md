@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.0.1] - 2026-09-15
+
+### Fixed
+
+- `OnLoad` took a depot token for `eventsmetadata.json` and `cooked_metadata.audio_metadata`
+  unconditionally. That load finished inside Codeware's `OnLoad` loop, so every later service's
+  `Resource/Load` listener missed it: Restore Nebula 1.04 lost its Growl FM track, and any other
+  listener-only metadata patcher lost its edits. `Watch()` now takes the token only when
+  `AudioXLNative.IsResourceRequested(path)` is true; the listener catches the game's own load at
+  audio init otherwise. Measured in Testing with the compatibility patch unticked: AudioXL reads
+  the base metadata on its EARLY path and Restore Nebula's track plays.
+
+### Changed
+
+- AudioXL is a hard compile dependency: `import AudioXL.*` is unguarded, floor 0.4.3
+  (`IsResourceRequested`). A missing or older AudioXL fails redscript compilation before launch.
+
 ## [1.0.0] - 2026-09-11
 
 ### Added

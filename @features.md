@@ -9,9 +9,10 @@
 - The station shows `Dawid Podsiadło, P.T. Adamczyk - Phantom Liberty`, in all nineteen languages.
 - The track sits at Growl FM's own level and fades with distance like every other song, because the
   segment carries the station's broadcast sends, bus and dry Volume rather than a tuned trim.
-- Coexists with the other mods that add a track to Growl FM. Hardest to Be, Restore Nebula and this
-  one all play on the station together, with Hardest to Be's Restore Nebula Compatibility Patch
-  installed.
+- Coexists with Restore Nebula with no patch. The mod never starts the metadata load from
+  `OnLoad`: it listens for the load, and takes a depot token only for a resource
+  `AudioXLNative.IsResourceRequested` reports as already requested.
+- AudioXL 0.4.3 or newer is a hard compile dependency.
 
 ## Planned
 
